@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: fct_order_items
+    description: order items fact table
+
+    columns:
+      - name: order_item_key
+        tests:
+          - unique
+          - not_null
+      - name: order_key
+      - name: order_date
+      - name: customer_key
+      - name: part_key
+      - name: supplier_key
+      - name: order_item_status_code
+      - name: return_flag
+      - name: line_number
+      - name: ship_date
+      - name: commit_date
+      - name: receipt_date
+      - name: ship_mode
+      - name: supplier_cost
+      - name: base_price
+      - name: discount_percentage
+      - name: discounted_price
+      - name: tax_rate
+      - name: order_item_count
+      - name: quantity
+      - name: gross_item_sales_amount
+      - name: discounted_item_sales_amount
+      - name: item_discount_amount
+      - name: item_tax_amount
+      - name: net_item_sales_amount
