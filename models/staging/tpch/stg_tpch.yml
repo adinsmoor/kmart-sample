@@ -1,7 +1,14 @@
 version: 2
 
 models:
- 
+  - name: stg_tpch_customers
+    description: staging layer for customer data
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+  
   - name: stg_tpch_line_items
     description: staging layer for line items data
     columns:

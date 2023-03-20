@@ -7,7 +7,7 @@ sources:
     database: raw
     schema: tpch_sf001
     tables:
-
+      - name: customer
       - name: orders
         description: main order tracking table
         freshness: # make this a warning as this is static data
