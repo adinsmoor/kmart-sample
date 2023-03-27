@@ -55,3 +55,6 @@ seeds:
       +column_types:
         effective_date: DATE
         rate: NUMBER   
+
+snapshots:
+  target_schema: dbt_km_snapshots
